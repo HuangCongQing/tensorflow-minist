@@ -26,7 +26,7 @@ def convolutional(input)::# 输入
     return sess.run(y2, feed_dict={x: input, keep_prob: 1.0}).flatten().tolist()
 
 
-app = Flask(__name__)
+app = Flask(__name__) # 定义flask
 
 
 @app.route('/api/mnist', methods=['post'])
