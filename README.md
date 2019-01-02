@@ -9,4 +9,4 @@ TensorFlow与Flask结合打造手写体数字识别
 * Flask框架建立
 * MNIST模型与FLask框架整合
 
-1. [](./base.md)
+1. [基础知识](./base.md)
