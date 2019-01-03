@@ -26,12 +26,14 @@ with tf.Session() as sess:
     summary_write.add_graph(sess.graph)
     sess.run(tf.global_variables_initializer())
 
-    for i in range(20000):
+    # for i in range(20000):更换总数，因为会报错
+    for i in range(10000):
+        # batch = data.train.next_batch(50)
         batch = data.train.next_batch(50)
         if i % 100 == 0:
             train_accuracy = accuracy.eval(
                 feed_dict={x: batch[0], y_: batch[1], keep_prob: 1.0})
-            print("Step %d, training accuracy %g" % (i, train_accuracy))
+            print("Step %d, training accuracy %g" % (i, train_accuracy))# 多少step，精确度
         sess.run(train_step, feed_dict={
                  x: batch[0], y_: batch[1], keep_prob: 0.5})
     print(sess.run(accuracy, feed_dict={

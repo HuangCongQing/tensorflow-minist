@@ -22,7 +22,7 @@ def regression(input):# 输入
     return sess.run(y1, feed_dict={x: input}).flatten().tolist()
 
 
-def convolutional(input)::# 输入
+def convolutional(input):# 输入
     return sess.run(y2, feed_dict={x: input, keep_prob: 1.0}).flatten().tolist()
 
 
