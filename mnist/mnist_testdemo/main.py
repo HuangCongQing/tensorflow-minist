@@ -49,7 +49,7 @@ def mnist():
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    return render_template('index.html') # 运行index.html
 
 
 if __name__ == "__main__":

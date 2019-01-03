@@ -27,7 +27,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     # for i in range(20000):更换总数，因为会报错
-    for i in range(10000):
+    for i in range(2000):
         # batch = data.train.next_batch(50)
         batch = data.train.next_batch(50)
         if i % 100 == 0:

@@ -13,6 +13,8 @@ environments：python3.5 win764位
 
 1. [基础知识](./base.md)
 
+* [flask入门](http://docs.jinkan.org/docs/flask/quickstart.html#a-minimal-application)
+
 ### error
 
 AttributeError: module 'input_data' has no attribute 'read_data_sets'
