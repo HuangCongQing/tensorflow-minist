@@ -14,16 +14,16 @@ environments：python3.5 win764位
 ```
 // 主要目录
 mnist
-        │  convolutional.py
-        │  input_data.py
-        │  model.py
-        │  regression.py
+        │  convolutional.py// 卷积模型
+        │  input_data.py  //下载数据集，官网上也有，其他py文件可以调用此文件进行下载数据
+        │  model.py       // 两个模型初始化
+        │  regression.py  // 线性回归模型
         │
         ├─data
         │      regression.ckpt.data-00000-of-00001
         │      regression.ckpt.index
         │
-        ├─MNIST_data
+        ├─MNIST_data  // 下载的数据集
         │      t10k-images-idx3-ubyte.gz
         │      t10k-labels-idx1-ubyte.gz
         │      train-images-idx3-ubyte.gz
@@ -31,7 +31,7 @@ mnist
 
 
 
-├─src
+├─src              // 前端代码
         │  └─js
         │          main.js
         │
@@ -47,7 +47,7 @@ mnist
         │          main.js
         │
         └─templates
-                index.html
+                index.html   // 前端界面显示入口
 ```
 
 
