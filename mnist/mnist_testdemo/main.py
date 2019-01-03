@@ -3,7 +3,7 @@ import tensorflow as tf
 from flask import Flask, jsonify, render_template, request
 import json
 from mnist import model  # model.py
-x = tf.placeholder('float', [None, 784])
+x = tf.placeholder('float', [None, 784]) # 输入
 sess = tf.Session()
 
 with tf.variable_scope('regression'):

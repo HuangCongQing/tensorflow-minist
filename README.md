@@ -13,7 +13,7 @@ environments：python3.5 win764位
 
 ```
 // 主要目录
-mnist
+├─mnist
         │  convolutional.py// 卷积模型
         │  input_data.py  //下载数据集，官网上也有，其他py文件可以调用此文件进行下载数据
         │  model.py       // 两个模型初始化
@@ -29,7 +29,7 @@ mnist
         │      train-images-idx3-ubyte.gz
         │      train-labels-idx1-ubyte.gz
 
-
+├─main.py   // flask,制作接口
 
 ├─src              // 前端代码
         │  └─js
